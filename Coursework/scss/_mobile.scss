@@ -1,0 +1,100 @@
+// Widescreens
+@include mediaXl {
+  main {
+    align-items: center;
+    text-align: center;
+
+    .lg-heading {
+        line-height: 1;
+        margin-bottom:  1rem;
+    }
+  }
+  }
+  
+  // Desktops & Laptops
+  @include mediaLg {
+    main {
+      align-items: center;
+      text-align: center;
+  
+      .lg-heading {
+          line-height: 1;
+          margin-bottom:  1rem;
+      }
+
+      .container .box{
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+      }
+    }
+  }
+  
+  // Tablets & Small Laptops
+  @include mediaMd {
+    main {
+      align-items: center;
+      text-align: center;
+  
+      .lg-heading {
+          line-height: 1;
+          margin-top: 0.5rem;
+          font-size: 5rem;
+      }
+    }  
+  
+    ul.menu-nav {
+      float: none;
+      width: 100%;
+      min-height: 0;
+  
+      &.show {
+          transform: translate3d(0,0,0);
+      }
+    }
+  
+    .menu-nav {
+      height: 100%;
+      width: 100%;
+      transform: translate3d(-100%,0,0);
+      font-size: 24px;
+      line-height: 0.5;
+    }
+
+    .container .box{
+      width: 100%;
+    }
+  
+    .about-info {
+      grid-template-areas:
+      'bio'
+      'ab1'
+      'ab2'
+      'ab3'
+      'per1'
+      'per2'
+      'per3';
+  
+      grid-template-columns: 1fr;
+    }
+  
+    .tariffs {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  // Smartphones
+  @include mediaSm {
+      main#home h1 {
+          margin-top: 30vh;
+
+        
+      }
+
+      .tariffs {
+        grid-template-columns: 1fr;
+      }
+
+      
+
+  }
+  

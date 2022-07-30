@@ -1,0 +1,14 @@
+{
+  "name": "coursework",
+  "version": "1.0.0",
+  "description": "BrainShop",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css --recursive"
+  },
+  "author": "Mariia",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
